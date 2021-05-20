@@ -5,7 +5,11 @@
 <head>
 <meta charset="UTF-8">
 <title>shoesum</title>
-<link rel="stylesheet" type="text/css" href="<%=request.getContextPath() %>/css/style.css">
+<link rel="stylesheet" type="text/css" href="<%=request.getContextPath() %>/css/style_JK.css">
+<link rel="stylesheet" type="text/css" href="<%=request.getContextPath() %>/css/style_HY.css">
+<link rel="stylesheet" type="text/css" href="<%=request.getContextPath() %>/css/style_HE.css">
+<link rel="stylesheet" type="text/css" href="<%=request.getContextPath() %>/css/style_IH.css">
+<link rel="stylesheet" type="text/css" href="<%=request.getContextPath() %>/css/style_DG.css">
 <script src="<%=request.getContextPath()%>/js/jquery-3.6.0.min.js"></script>
 
 <script>
