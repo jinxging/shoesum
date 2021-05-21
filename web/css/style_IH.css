@@ -1,0 +1,458 @@
+@charset "UTF-8";
+/* 공용 css 시작*/
+/* font-family: 'Noto Sans KR', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+div#wrapper {
+    width: 100%;
+    margin: auto;
+}
+
+/* header + nav css */
+header {
+    width: 1000px;
+    height: 160px;
+    position: relative;
+    margin: auto;
+}
+ul#header_top {
+    position: absolute;
+    top: 5px;
+    right: 0;
+}
+ul#header_top>li {
+    display: inline-block;
+    text-align: center;
+    font-size: 11px;
+    border-left: 1px solid lightgray;
+    padding: 0 10px;
+}
+ul#header_top>li:first-of-type {
+    border: none;
+}
+div#logo {
+    width: 160px;
+    height: 80px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background: url(../images/logo_png.png) no-repeat center;
+    background-size: contain;
+}
+div#search_bar {
+    width: 350px;
+    height: 30px;
+    border-bottom: 1px solid black;
+    background: white;
+    position: absolute;
+    top: 90px;
+    right: 325px;
+}
+div#search_bar>input {
+    font-size: 15px;
+    width: 315px;
+    padding: 3px 0 0 10px;
+    border: none;
+    float: left;
+    outline: none;
+}
+div#search_bar>button {
+    width: 35px;
+    height: 25px;
+    background: url(../images/search_ui.png) no-repeat left;
+    background-size: contain;
+    border: none;
+    outline: none;
+}
+div#direct_ui {
+    position: absolute;
+    right: 25px;
+    top: 90px;
+}
+div#direct_ui img {
+    width: 35px;
+    margin: 0 10px 0 5px;
+}
+nav {
+    width: 100%;
+    height: 50px;
+    background: rgb(255, 166, 0)
+}
+ul#menu_bar {
+    width: 50%;
+    height: 50px;
+    margin: auto;
+    
+}
+ul#menu_bar>li {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    padding: 0 25px;
+    color: white;
+    line-height: 50px;
+}
+
+/* footer css */
+footer {
+    clear: both;
+    width: 1000px;
+    margin: auto;
+}
+footer h3 {
+    margin-bottom:20px;
+}
+div#footer_top {
+    display: table;
+}
+div#footer_top>div {
+    width: 500px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    padding: 10px 0;
+}
+div.bank_info {
+    border-right: 1px solid lightgray;
+}
+div#footer_bottom {
+    width: 100%;
+    height: 200px;
+    background: rgb(255, 166, 0);
+    margin-top: 20px;
+    text-align: center;
+    display: table;
+}
+div#footer_bottom>p {
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    color: white;
+    font-size: 13px;
+}
+div#footer_bottom>h3 {
+    display: block;
+}
+
+/* 공용 css 끝*/
+
+/* 질문 게시판 css 시작 */
+
+#question_board_container{
+    width: auto;
+    height: 200px;
+    text-align: center;
+    
+}
+
+.question_board{
+    margin:0;
+    font-size:30px;
+    line-height: 200px;
+}
+#question_table_container{
+    width: 1000px;
+    height: auto;
+    margin-top: 0%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.question_table{
+    width: 100%;
+    height: auto;
+    border-collapse: collapse;
+}
+
+.th{
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    border-left: none;
+    border-right: none;
+    text-align: center;
+    padding: 15px;
+}
+
+.td{
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid black;
+    padding: 15px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.td-color{
+    background-color: rgb(252, 255, 53);
+}
+#question_bottom_container{
+    margin-top: 30px;
+    width: 1000px;
+    height: 40px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+}
+
+/* 질문게시판 css 끝 */
+
+/* 글쓰기 css 시작 */
+    /* 문의하기, 등록 버튼 css*/
+#write_top_container{
+    margin-top: 30px;
+     width: 1000px;
+     height: 40px;
+     position: relative;
+     left: 50%;
+     transform: translateX(-50%);
+     display: inline-block;
+ }
+
+ #write_top_container>span>p{
+     font-size: 20px;
+     font-weight: bold;
+     font-family: 'Y_Spotlight';
+ }
+ #write_top_container>button{
+     width: 60px;
+     height: 25px;
+     font-weight: bold;
+     margin-top: 18px;
+     
+ }
+ .hr{
+    border:"1px solid gray";
+    width: 1000px;
+ }
+ 
+    /* 제목, 내용 css */
+#write_container{
+    width: 1000px;
+    height: auto;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+}
+#write_title{
+    width: 998px;
+    height: 30px;
+    padding: 0px;
+}
+#write_contents{
+    width: 996px;
+    height: 500px;
+    margin-top: 10px;
+}
+    /* 비밀번호, 목록 버튼 css*/
+    #write_bottom_container{
+        margin-top: 10px;
+        width: 998px;
+        height: 60px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #write_password_container{
+        border:1px solid black;
+        width: 1000px;
+        height: auto;
+        border-collapse: collapse;
+    }
+    #table_container>th,td{
+        border:1px solid black;
+    }
+    .td_password{
+        width: 100px;
+    }
+    #button{
+        margin-top: 10px;
+    }
+/* 글쓰기 css 끝 */
+
+/* 상품문의 css 시작 */
+
+ #write_answer_container>span>p{
+    font-family: 'Y_Spotlight';
+    font-size: 20px;
+    font-weight: bold;
+    float: left;
+}
+#write_answer_container{
+    margin-top: 30px;
+    width: 1000px;
+    height: 40px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+}
+.hr{
+    width: 1000px;  
+}
+
+    /* 상품문의 상단 css */
+#write_answer_title_container{
+    width: 1000px;
+    height: 80px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+    /* 상품문의 제목, 내용 css */
+#write_content_container{
+    width: 1000px;
+    height: 300px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#write_comment_container{
+    width: 1000px; 
+    height: auto;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#content{
+    width: 1000px;
+    height: 40px;
+}
+
+    /* 댓글등록, 댓글창, 목록버튼, 등록버튼 css*/
+#write_comment{
+    width: 1000px;
+    height: 60px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#write_answer_comment{
+    width: 992px;
+    height: 60px;
+}
+.write_anwser_button{
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-left: 5px;
+    float: right;
+}
+.write_anwser_button_back{
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    margin-top: 5px;
+    float: right;
+}
+/* 상품문의 css 끝 */
+
+/* 자주 묻는 질문 css 시작 */
+#FAQ_board{
+    width: auto;
+    height: 200px;
+    text-align: center;
+    
+}
+.FAQ_board_title{
+    margin:0;
+    font-size:30px;
+    line-height: 200px;
+}
+#FAQ_table_container{
+    width: 1000px;
+    height: auto;
+    margin-top: 0%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#FAQ_table{
+    width: 1000px;
+    height: auto;
+    border-collapse: collapse;
+}
+.td_title{
+    width: 10px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+    border-left: none;
+    border-right: none;
+}
+
+.td_content{
+    border-bottom: 1px solid black;
+    padding: 15px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+    border-left: none;
+    border-right: none;
+
+}
+#FAQ_bottom_container{
+    width: 1000px;
+    height: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* 자주 묻는 질문 css 끝 */
+
+/* 비밀번호 입력창 css 시작 */
+#password_board{
+    width: auto;
+    height: 200px;
+    text-align: center;
+    
+}
+.password_board{
+    margin:0;
+    font-size:30px;
+    line-height: 200px;
+}
+#password_container{
+    width: 1000px;
+    height: 300px;
+    padding-top: 100px;
+    margin-top: 0%;
+    margin-bottom: 30px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 3px solid gray;
+}
+.p_content{
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+.search_form{
+    width: auto;
+    height: 40px;
+    margin: 0 auto;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.form{
+    text-align: center;
+}
+
+/* 비밀번호 입력창 css 끝*/
