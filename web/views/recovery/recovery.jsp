@@ -5,8 +5,8 @@
 <head>
   <meta charset="utf-8">
   <title>슈썸 : 아이디 찾기</title>
-  <link rel="stylesheet" type="text/css" href="<%=request.getContextPath() %>/css/style_none.css">
   <link rel="stylesheet" type="text/css" href="<%=request.getContextPath() %>/css/recovery.css">
+  <link rel="stylesheet" type="text/css" href="<%=request.getContextPath() %>/css/style_None.css">
 </head>
 
 <body>

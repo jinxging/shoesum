@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>슈썸 : 로그인</title>
-  <link rel="stylesheet" type="text/css" href="<%=request.getContextPath() %>/css/style_none.css">
+  <link rel="stylesheet" type="text/css" href="<%=request.getContextPath() %>/css/style_None.css">
   <link rel="stylesheet" type="text/css" href="<%=request.getContextPath() %>/css/login.css">
 </head>
 
