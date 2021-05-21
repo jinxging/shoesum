@@ -37,8 +37,8 @@
                 <button></button>
             </div>
             <div id="direct_ui">
-                <a href=""><img src="<%=request.getContextPath() %>/images/mypage_ui.png" alt=""></a>
-                <a href=""><img src="<%=request.getContextPath() %>/images/cart_ui.png" alt=""></a>
+                <a href=""><img src="<%=request.getContextPath() %>/images/ui/mypage_ui.png" alt=""></a>
+                <a href=""><img src="<%=request.getContextPath() %>/images/ui/cart_ui.png" alt=""></a>
             </div>
         </header>
         <nav>

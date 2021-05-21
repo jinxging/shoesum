@@ -8,9 +8,9 @@
                <button type="button" id="prev"></button>
                <button type="button" id="next"></button>
            </div>
-           <img src="<%=request.getContextPath() %>/images/main_01.jpg" alt="메인이미지1">
-           <img src="<%=request.getContextPath() %>/images/main_02.jpg" alt="메인이미지2">
-           <img src="<%=request.getContextPath() %>/images/main_03.jpg" alt="메인이미지3">
+           <img src="<%=request.getContextPath() %>/images/main_slide/main_01.jpg" alt="메인이미지1">
+           <img src="<%=request.getContextPath() %>/images/main_slide/main_02.jpg" alt="메인이미지2">
+           <img src="<%=request.getContextPath() %>/images/main_slide/main_03.jpg" alt="메인이미지3">
        </div>
        <div id="hot_pd">
 	       <h2>HOT DEAL</h2>
@@ -18,9 +18,9 @@
 	           <div>
 	               <a href="">
 	                   <div class="sale">20%</div>
-	                   <img src="<%=request.getContextPath() %>/images/shose.png" alt="">
+	                   <img src="<%=request.getContextPath() %>/images/product/shose.png" alt="">
 	                   <div class="time_attack">
-	                       <img src="<%=request.getContextPath() %>/images/time_attcak.png" alt="">
+	                       <img src="<%=request.getContextPath() %>/images/ui/time_attcak.png" alt="">
 	                       <div id="count_time"></div>
 	                   </div>
 	               </a>
@@ -29,9 +29,9 @@
 	           <div>
 	               <a href="">
 	                   <div class="sale">33%</div>
-	                   <img src="<%=request.getContextPath() %>/images/shose.png" alt="">
+	                   <img src="<%=request.getContextPath() %>/images/product/shose.png" alt="">
 	                   <div class="time_attack">
-	                       <img src="<%=request.getContextPath() %>/images/time_attcak.png" alt="">
+	                       <img src="<%=request.getContextPath() %>/images/ui/time_attcak.png" alt="">
 	                       <div id="count_time2"></div>
 	                   </div>
 	               </a>
@@ -40,9 +40,9 @@
 	           <div>
 	               <a href="">
 	                   <div class="sale">77%</div>
-	                   <img src="<%=request.getContextPath() %>/images/shose.png" alt="">
+	                   <img src="<%=request.getContextPath() %>/images/product/shose.png" alt="">
 	                   <div class="time_attack">
-	                       <img src="<%=request.getContextPath() %>/images/time_attcak.png" alt="">
+	                       <img src="<%=request.getContextPath() %>/images/ui/time_attcak.png" alt="">
 	                       <div id="count_time3"></div>
 	                   </div>
 	               </a>
@@ -54,23 +54,23 @@
            <h2>BEST PRODUCT</h2>
            <div class="product">
                <div>
-                   <a href=""><img src="images/shose.png" alt=""></a>
+                   <a href=""><img src="images/product/shose.png" alt=""></a>
                    <p>[슈썸]상품이름<br>가격</p>
                </div>
                <div>
-                   <a href=""><img src="images/shose.png" alt=""></a>
+                   <a href=""><img src="images/product/shose.png" alt=""></a>
                    <p>[슈썸]상품이름<br>가격</p>
                </div>
                <div>
-                   <a href=""><img src="images/shose.png" alt=""></a>
+                   <a href=""><img src="images/product/shose.png" alt=""></a>
                    <p>[슈썸]상품이름<br>가격</p>
                </div>
                <div>
-                   <a href=""><img src="images/shose.png" alt=""></a>
+                   <a href=""><img src="images/product/shose.png" alt=""></a>
                    <p>[슈썸]상품이름<br>가격</p>
                </div>
                <div>
-                   <a href=""><img src="images/shose.png" alt=""></a>
+                   <a href=""><img src="images/product/shose.png" alt=""></a>
                    <p>[슈썸]상품이름<br>가격</p>
                </div>
            </div>
@@ -79,23 +79,23 @@
            <h2>NEW PRODUCT</h2>
            <div class="product">
                <div>
-                   <a href=""><img src="images/shose.png" alt=""></a>
+                   <a href=""><img src="images/product/shose.png" alt=""></a>
                    <p>[슈썸]상품이름<br>가격</p>
                </div>
                <div>
-                   <a href=""><img src="images/shose.png" alt=""></a>
+                   <a href=""><img src="images/product/shose.png" alt=""></a>
                    <p>[슈썸]상품이름<br>가격</p>
                </div>
                <div>
-                   <a href=""><img src="images/shose.png" alt=""></a>
+                   <a href=""><img src="images/product/shose.png" alt=""></a>
                    <p>[슈썸]상품이름<br>가격</p>
                </div>
                <div>
-                   <a href=""><img src="images/shose.png" alt=""></a>
+                   <a href=""><img src="images/product/shose.png" alt=""></a>
                    <p>[슈썸]상품이름<br>가격</p>
                </div>
                <div>
-                   <a href=""><img src="images/shose.png" alt=""></a>
+                   <a href=""><img src="images/product/shose.png" alt=""></a>
                    <p>[슈썸]상품이름<br>가격</p>
                </div>
            </div>
