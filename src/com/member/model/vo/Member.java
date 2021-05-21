@@ -2,7 +2,7 @@ package com.member.model.vo;
 
 //member테이블
 public class Member {
-	private String memberNo;
+	private int memberNo;
 	private String memberId;
 	private String memberPw;
 	private String memberName;
@@ -16,7 +16,7 @@ public class Member {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Member(String memberNo, String memberId, String memberPw, String memberName, String email, String phone,
+	public Member(int memberNo, String memberId, String memberPw, String memberName, String email, String phone,
 			String postNo, String address, String addressEnd) {
 		super();
 		this.memberNo = memberNo;
@@ -30,11 +30,11 @@ public class Member {
 		this.addressEnd = addressEnd;
 	}
 
-	public String getMemberNo() {
+	public int getMemberNo() {
 		return memberNo;
 	}
 
-	public void setMemberNo(String memberNo) {
+	public void setMemberNo(int memberNo) {
 		this.memberNo = memberNo;
 	}
 
