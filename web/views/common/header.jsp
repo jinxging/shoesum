@@ -31,14 +31,14 @@
                 <li><a href="">질문게시판</a></li>
                 <li><a href="">자주묻는질문</a></li>
             </ul>
-            <div id="logo"></div>
+            <div id="logo" onclick="location.assign('<%=request.getContextPath() %>')"></div>
             <div id="search_bar">
                 <input type="text" placeholder="검색어를 입력하세요">
                 <button></button>
             </div>
             <div id="direct_ui">
-                <a href=""><img src="<%=request.getContextPath() %>/images/mypage_ui.png" alt=""></a>
-                <a href="<%=request.getContextPath()%>/cart/cartView?userId=양화영"><img src="<%=request.getContextPath() %>/images/cart_ui.png" alt=""></a>
+                <a href="<%=request.getContextPath()%>/member/mypage.do"><img src="<%=request.getContextPath() %>/images/ui/mypage_ui.png" alt=""></a>
+                <a href=""><img src="<%=request.getContextPath() %>/images/cart_ui.png" alt=""></a>
             </div>
         </header>
         <nav>

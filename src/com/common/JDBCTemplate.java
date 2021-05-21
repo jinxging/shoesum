@@ -24,6 +24,7 @@ public class JDBCTemplate {
 			Class.forName(prop.getProperty("driver"));
 			conn = DriverManager.getConnection(prop.getProperty("url"),prop.getProperty("id"),prop.getProperty("password"));
 			conn.setAutoCommit(false);
+			
 		} catch(Exception e) {
 			e.printStackTrace();
 		}
