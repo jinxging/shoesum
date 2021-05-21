@@ -354,6 +354,7 @@
                     <input type="submit" value="수정" style="background-color : black; color : white" >
                     <input type="button" value="취소" onclick=""><!-- 메인으로 돌아가기 -->
                 </div>
+                <input type="hidden" id="memberNo" name="memberNo" value="1"> <!--member_no를 hidden으로 넘기기  -->
             </form>
         </div>
     </article>
