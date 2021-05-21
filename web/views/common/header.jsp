@@ -38,7 +38,7 @@
             </div>
             <div id="direct_ui">
                 <a href=""><img src="<%=request.getContextPath() %>/images/mypage_ui.png" alt=""></a>
-                <a href=""><img src="<%=request.getContextPath() %>/images/cart_ui.png" alt=""></a>
+                <a href="<%=request.getContextPath()%>/cart/cartView?userId=양화영"><img src="<%=request.getContextPath() %>/images/cart_ui.png" alt=""></a>
             </div>
         </header>
         <nav>

@@ -1,6 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ include file =  "/views/common/header.jsp" %>
+<%@ page import = "com.cart.model.vo.Cart,java.util.List" %>
+
+<%
+	
+	List<Cart> list = (List<Cart>)request.getAttribute("list");
+
+%>
 
 <section class="cart_title" id="cart_title">
     <div class="cart_tit_title">장바구니</div>
@@ -18,6 +25,7 @@
                 <td>합계</td>
                 <td>선택</td>
             </tr>
+            <%if(list==null){ %>
             <tr id="cart_null">
                 <td colspan="8" style="padding-left:0px;">
                     <ul>
@@ -26,24 +34,26 @@
                     </ul>
                 </td>
             </tr>
+            <% } else {
+            	for(Cart c : list){
+            	%>
             <tr class="cart_products">
                 <td><input type="checkbox" name="select_products" value></td>
                 <td><img src="<%=request.getContextPath() %>/images/logo_png.png" alt=""></td>
                 <td>
 
                     <ul>
-                        <li>제품 명 : 나이키 파란색 </li>
-                        <li>사이즈 : 150</li>
-                        <li>색상 : 빨간색</li>
+                        <li>제품 명 : <%=c.getProName() %> </li>
+                        <li>사이즈 : <%=c.getProSize() %></li>
+                        <li>색상 : <%= c.getProColor() %></li>
                     </ul>
 
                 </td>
-                <td>1000000</td>
-                <td>100</td>
+                <td><%= c.getProPrice() %></td>
+                <td><%= c.getCartProCount() %></td>
                 <td>무료</td>
-                <td>1000000원</td>
+                <td><%= (c.getProPrice() * c.getCartProCount()) %></td>
                 <td>
-
                     <ul>
                         <li><input type="button" name="btn_order" value="주문하기"
                                 style="background-color : black; color : white"></li>
@@ -53,29 +63,8 @@
 
                 </td>
             </tr>
-            <tr class="cart_products">
-                <td><input type="checkbox" name="select_products" value></td>
-                <td><img src="<%=request.getContextPath() %>/images/logo_png.png" alt=""></td>
-                <td>
-                    <ul>
-                        <li>제품 명 : 나이키 파란색 </li>
-                        <li>사이즈 : 150</li>
-                        <li>색상 : 빨간색</li>
-                    </ul>
-                </td>
-                <td>1000000</td>
-                <td>100</td>
-                <td>무료</td>
-                <td>1000000원</td>
-                <td>
-                    <ul>
-                        <li><input type="button" name="btn_order" value="주문하기"
-                                style="background-color : black;color:white"></li>
-                        <li><input type="button" name="btn_delete" value="삭제" style="background-color : #CCCCCC">
-                        </li>
-                    </ul>
-                </td>
-            </tr>
+           	 <% } %>
+            <% } %>
         </table>
         <div id="order_price">
             <div id="price_head_wrap">
@@ -83,6 +72,7 @@
                 <div>배송비</div>
                 <div>결제금액</div>
             </div>
+            <% if (list!=null){ %>
             <div id="price_body_wrap">
                 <div>1000</div>
                 <div>+</div>
@@ -94,14 +84,10 @@
         <div id="order_end">
             <button>주문하기</button>
         </div>
+        <%} %>
     </div>
-
+	
 </section>
-
-
-
-
-
 
 <%@ include file =  "/views/common/footer.jsp" %>
 	
